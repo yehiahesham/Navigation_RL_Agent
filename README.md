@@ -55,3 +55,26 @@ You need only select the environment that matches your operating system:
 Then, place the file in the `p1_navigation/` folder in the DRLND GitHub repository, and unzip (or decompress) the file.  Next, open `Navigation_Pixels.ipynb` and follow the instructions to learn how to use the Python API to control the agent.
 
 (_For AWS_) If you'd like to train the agent on AWS, you must follow the instructions to [set up X Server](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above.
+
+### Results 
+#### A) Results of Trainned Agent on Env's State Space 
+So as we mentioned before the agent was first trained with the enviroment state shape. The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction. The agent was trained for 2K epossiodes, below is a graph of eps vs  avg mean score
+
+[image_Report1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
+
+![Trained Agent_Performance (esposide vs avg Mean Score][image_Report1]
+
+You can Find the code of such performace in `Navigation.ipynb`.  
+
+
+#### B) Results of Trainned Agent on Env's Pixels 
+Another approach is to use the Env pixels as a human would play as input and which the Agent deduce the features needed to play the game, such as the agent's velocity, along with ray-based perception of objects around agent's forward direction. The agent was trained for 2K epossiodes on pixels, below is a graph of eps vs  avg mean score
+
+[image_Report2]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
+
+![Trained Agent_Performance (esposide vs avg Mean Score][image_Report2]
+
+You can Find the code of such performace in `Navigation_Pixels.ipynb`.  
+
+
+
