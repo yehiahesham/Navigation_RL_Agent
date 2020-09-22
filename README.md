@@ -60,7 +60,7 @@ Then, place the file in the `p1_navigation/` folder in the DRLND GitHub reposito
 #### A) Results of Trainned Agent on Env's State Space 
 So as we mentioned before the agent was first trained with the enviroment state shape. The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction. The agent was trained for 2K epossiodes, below is a graph of eps vs  avg mean score
 
-[image_Report1]: https://github.com/yehiahesham/Navigation_RL_Agent/Performance_1.png "Trained Agent"
+[image_Report1]: https://github.com/yehiahesham/Navigation_RL_Agent/blob/master/Performance_1.png "Trained Agent"
 
 ![Trained Agent_Performance (esposide vs avg Mean Score][image_Report1]
 
@@ -70,7 +70,7 @@ You can Find the code of such performace in `Navigation.ipynb`.
 #### B) Results of Trainned Agent on Env's Pixels 
 Another approach is to use the Env pixels as a human would play as input and which the Agent deduce the features needed to play the game, such as the agent's velocity, along with ray-based perception of objects around agent's forward direction. The agent was trained for 2K epossiodes on pixels, below is a graph of eps vs  avg mean score
 
-[image_Report2]: https://github.com/yehiahesham/Navigation_RL_Agent/blob/master/Performance_1.png "Trained Agent"
+[image_Report2]: https://github.com/yehiahesham/Navigation_RL_Agent/blob/master/Performance_2.png "Trained Agent"
 
 ![Trained Agent_Performance (esposide vs avg Mean Score][image_Report2]
 
