@@ -1,5 +1,5 @@
 # Navigation_RL_Agent
-Project-1 of Udacity Deep Reinforcement Learning Nanodegree. Trainning an agent to navigate (and collect bananas!) in a large, square world. 
+Project-1 of Udacity Deep Reinforcement Learning Nanodegree. Training an agent to navigate (and collect bananas!) in a large, square world. 
 
 [//]: # (Image References)
 
@@ -60,7 +60,7 @@ Then, place the file in the `p1_navigation/` folder in the DRLND GitHub reposito
 
 Please Check  `Report.ipynb` to have a look on Describition of the Learning Algorithm, Plots, and Ideas for Future Work.
  
-#### A) Results of Trainned Agent on Env's State Space 
+#### A) Results of Trained Agent on Env's State Space 
 So as we mentioned before the agent was first trained with the enviroment state shape. The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction. The agent was trained for 2K epossiodes, below is a graph of eps vs  avg mean score
 
 As you can see, the Agent was able to acheieve at least score of 15 from episode 500 till the end.
