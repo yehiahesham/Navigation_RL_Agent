@@ -57,22 +57,33 @@ Then, place the file in the `p1_navigation/` folder in the DRLND GitHub reposito
 (_For AWS_) If you'd like to train the agent on AWS, you must follow the instructions to [set up X Server](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above.
 
 ### Results 
+
+Please Check  `Report.ipynb` to have a look on Describition of the Learning Algorithm, Plots, and Ideas for Future Work.
+ 
 #### A) Results of Trainned Agent on Env's State Space 
 So as we mentioned before the agent was first trained with the enviroment state shape. The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction. The agent was trained for 2K epossiodes, below is a graph of eps vs  avg mean score
 
-As you can see, the Agent was able to acheieve at least score of 15 from episode 500 till the end, which satisfy the success criteria for this project. 
-
-'solve the environment, my agent must get an average score of +13 over 100 consecutive episodes.'
-
+As you can see, the Agent was able to acheieve at least score of 15 from episode 500 till the end.
 
 [image_Report1]: https://github.com/yehiahesham/Navigation_RL_Agent/blob/master/Performance_1.png "Trained Agent"
 
-![Trained Agent_Performance (esposide vs avg Mean Score][image_Report1]
+![Trained Agent_Performance (Esposide vs avg Mean Score)][image_Report1]
 
 You can Find the code of such performace in `Navigation.ipynb`.  
 
 
-  
+#### B)Proof of Solving Enviroment 
+In order to Solve this environment, the agent must be able to receive an average reward (over 100 episodes) of at least +13.
 
+Below is graph Heighting: 
+1. Scores vs Eposide
+2. The Min score required , orange line, at score 13 to show relatively the perfomance of the agent against the 1st success criteria, ie the minScore
+3. The Avg Achieved Score, green Line, on the last 100 Episodes which is the 2nd success criteria, ie the MinEposides
+
+[image_ReportGraphs]: https://github.com/yehiahesham/Navigation_RL_Agent/blob/master/Performance_2.png "Trained Agent"
+
+![Report Graphs][image_ReportGraphs]
+
+As one can see, the Agent satisfy the solve criteria for this project with a good margin. 
 
 
