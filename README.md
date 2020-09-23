@@ -86,4 +86,20 @@ Below is graph Heighting:
 
 As one can see, the Agent satisfy the solve criteria for this project with a good margin. 
 
+#### C)Play around
+You can always try this agent by loading the saved weights inside: 
+1. qnetwork_local.pth
+2. qnetwork_target.pth
+
+Please Check  `Report.ipynb`  file, but simply it goes like this:
+
+```
+#Load Weights To Model
+agent.qnetwork_local.load_state_dict(torch.load("qnetwork_local.pth"))
+agent.qnetwork_local.eval()
+
+agent.qnetwork_target.load_state_dict(torch.load("qnetwork_target.pth"))
+agent.qnetwork_target.eval() 
+```
+
 
